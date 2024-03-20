@@ -1,0 +1,12 @@
+federation_version: =2.5.0
+
+subgraphs:
+  review-service:
+    routing_url: http://localhost:4002
+    schema:
+      subgraph_url: http://localhost:4002
+  location-service:
+    routing_url: http://localhost:4001
+    schema:
+      subgraph_url: http://localhost:4001
+ 
