@@ -116,3 +116,21 @@ To run the servers in the `final` folder:
 ## Getting Help
 
 For any issues or problems concerning the course content, please refer to the [Odyssey topic in our community forums](https://community.apollographql.com/tags/c/help/6/odyssey).
+
+
+
+--------------------------------------------------------------
+
+To get the supergraph for rover 
+
+
+How to get the supergraph.graphql
+
+Go to the router library and ensure you have your subgraph up and running. 
+Then edit the ports number accordingly in the supergraph.yaml 
+
+rover supergraph compose --config ./supergraph.yaml --output supergraph.graphql
+
+Then start your router and run it locally
+
+router --config router.yaml --supergraph supergraph.graphql
